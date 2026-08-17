@@ -1,0 +1,12 @@
+*.class
+*.log
+*.jar
+*.war
+target/
+build/
+.gradle/
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
