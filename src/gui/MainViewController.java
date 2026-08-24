@@ -24,7 +24,7 @@ public class MainViewController implements Initializable {
 	private MenuItem menuItemSeller;
 	
 	@FXML
-	private MenuItem meunuIemDepartment;
+	private MenuItem meunuItemDepartment;
 	
 	@FXML
 	private MenuItem menuItemAbout;
