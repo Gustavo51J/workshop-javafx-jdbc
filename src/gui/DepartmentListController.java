@@ -98,9 +98,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			DepartmentFormController controller = loader.getController();
 			controller.setDepartment(obj);
 			controller.setDepartmentService(new DepartmentService());
-
 			controller.subscribeDataChangeListener(this);
-
 			controller.updateFormData();
 
 			Stage dialogueStage = new Stage();
@@ -111,6 +109,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			dialogueStage.initModality(Modality.WINDOW_MODAL);
 			dialogueStage.showAndWait();
 		} catch (IOException e) {
+			e.printStackTrace();
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}
